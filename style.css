@@ -1,0 +1,52 @@
+html,
+body {
+ height: 100%;
+ font-family: "Courier New", Courier, monospace;
+}
+
+main {
+ height: 100vh;
+ height: -webkit-fill-available;
+ max-height: 100vh;
+ overflow-x: auto;
+ overflow-y: hidden;
+ max-width: 1402px;
+}
+
+.nav-link {
+ color: black;
+ transition: color 0.25s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.nav-link:visited {
+ color: black;
+}
+
+.nav-link:hover {
+ color: white;
+ background-color: black;
+}
+
+a {
+ text-decoration: none;
+ color: black;
+ transition: color 0.25s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+a:hover {
+ color: white;
+ background-color: black;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.overflow-scroll::-webkit-scrollbar {
+ display: none;
+ scroll-behavior: smooth;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.overflow-scroll {
+ -ms-overflow-style: none; /* IE and Edge */
+ scrollbar-width: none; /* Firefox */
+ scroll-behavior: smooth;
+}
